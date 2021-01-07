@@ -1,0 +1,21 @@
+name: 'Generate markdown from witx'
+author: 'Matija Petrunić'
+branding:
+  icon: 'key'
+  color: 'blue'
+description: 'Generates markdown file from target .witx file'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+inputs:
+  markdownPath:
+    description: "Path when generated markdown should be store"
+    required: true
+  witxPath:
+    description: "Path to target .witx file from which markdown will be generated"
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
