@@ -6,13 +6,16 @@ on:
       - 'master'
 
 jobs:
+
   test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+
       - name: Generate markdown
-        uses: .
+        uses: ./
         with:
          markdownPath: .
          withPath: files/test.witx
