@@ -1,0 +1,10 @@
+(module $w3
+  ;;; Init w3
+  (@interface func (export "_w3_init"))
+
+  ;;; Invoke call
+  (@interface func (export "_w3_invoke")
+    (param $name_size u64)
+    (param $args_size u32)
+  )
+)
