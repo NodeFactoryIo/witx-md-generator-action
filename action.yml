@@ -3,14 +3,11 @@ author: 'Matija Petrunić'
 branding:
   icon: 'key'
   color: 'blue'
-description: 'Generates markdown file from target .witx file'
+description: 'Generates markdown files from target .witx files'
 
 inputs:
-  markdownPath:
-    description: "Path when generated markdown should be store"
-    required: true
   witxPath:
-    description: "Path to target .witx file from which markdown will be generated"
+    description: "Path to folder with .witx files"
     required: true
 
 runs:
