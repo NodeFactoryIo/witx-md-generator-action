@@ -5,8 +5,8 @@ Uses [witx tool](https://github.com/NodeFactoryIo/WASI/tree/master/tools/witx) t
 ## Inputs
 
 ```
-  witxPath:
-    description: "Path to target folder with .witx files from which markdown will be generated"
+  witxGlobPath:
+    description: "Glob path to .witx files from which md will be generated"
     required: true
 ```
 
@@ -15,5 +15,5 @@ Uses [witx tool](https://github.com/NodeFactoryIo/WASI/tree/master/tools/witx) t
   - name: Generate markdown
     uses: NodeFactoryIo/witx-md-generator-action
     with:
-      witxPath: files/
+      witxGlobPath: files/**/*.witx
 ```

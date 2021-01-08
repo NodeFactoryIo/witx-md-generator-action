@@ -6,8 +6,8 @@ branding:
 description: 'Generates markdown files from target .witx files'
 
 inputs:
-  witxPath:
-    description: "Path to folder with .witx files"
+  witxGlobPath:
+    description: "Glob path to .witx files from which md will be generated"
     required: true
 
 runs:

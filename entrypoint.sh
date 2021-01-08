@@ -8,9 +8,4 @@ if [[ -z "$GITHUB_WORKSPACE" ]]; then
 fi
 
 echo "--> Generating markdown"
-
-cd ${INPUT_WITXPATH}
-for file in $(find -name "*.witx")
-do
-  witx docs -o ${file%.witx}.md $file
-done
+witx docs "${INPUT_WITXGLOBPATH}"

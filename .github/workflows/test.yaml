@@ -17,4 +17,4 @@ jobs:
       - name: Generate markdown
         uses: ./
         with:
-         witxPath: files/
+         witxGlobPath: files/**/*.witx
